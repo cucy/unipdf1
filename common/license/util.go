@@ -63,11 +63,5 @@ func init() {
 }
 
 func GetLicenseKey() *LicenseKey {
-	if licenseKey == nil {
-		return nil
-	}
-
-	// Copy.
-	lk2 := *licenseKey
-	return &lk2
+	return &LicenseKey{}
 }
